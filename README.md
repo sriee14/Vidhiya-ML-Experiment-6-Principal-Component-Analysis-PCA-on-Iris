@@ -1,32 +1,16 @@
 ## Principal Component Analysis (PCA) on Iris
 
-
-
-
 ## AIM:
-
-
-
 
 Reduce 4D Iris data to 2 principal components and visualize species separation.
 
-
-
-
 ## ALGORITHM :
-
-
 
 PCA via SVD: compute components that capture maximal variance.
 
-
-
-
 ## PROGRAM:
 
-
 ```
-
 
 from sklearn.decomposition import PCA
 from sklearn.datasets import load_iris
@@ -41,16 +25,9 @@ np.round(pca.explained_variance_ratio_,4))
 plt.scatter(Z[:,0], Z[:,1], c=y, cmap='viridis'); plt.xlabel('PC1'); 
 plt.ylabel('PC2'); plt.title('PCA of Iris'); plt.show()
 
-
-
 ```
 
-
-
-
 ## OUTPUT:
-
-
 
 <img width="578" height="455" alt="image" src="https://github.com/user-attachments/assets/ba07e9d9-c445-4cd6-9170-3477877de86f" />
 
@@ -60,23 +37,11 @@ Explained variance ratio: [0.9246 0.0531]
 
 ```
 
-
-
-
 ## THEORY: 
-
-
-
 
 PCA finds orthogonal directions of maximal variance (eigenvectors of covariance matrix).
 
-
-
-
 ## RESULT:
-
-
-
 
 Students see PC1 captures most variance; PCA useful for visualization and 
 dimensionality reduction
